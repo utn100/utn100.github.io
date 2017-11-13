@@ -1,0 +1,48 @@
+body{
+  background: white;
+}
+#title{
+  color: red;
+}
+#map1 {
+  height: 650x;
+}
+
+#cloud{
+  height: 300px;
+    width: 1050px;
+
+}
+#count{
+  height: 550px;
+  width: 1000px;
+  align: left;
+}
+#bigramlist{
+  -moz-column-count: 3;
+   -moz-column-gap: 20px;
+   -webkit-column-count: 3;
+   -webkit-column-gap: 20px;
+   column-count: 3;
+   column-gap: 20px;
+}
+
+h4{
+  color: blue;
+  font-size: 25px;
+}
+#head{
+  color:red;
+}
+.head{
+  color: red;
+  text-align: center;
+}
+
+.comment{
+  color: green;
+  font-size: 18px;
+}
+.link{
+  font-size: 15px;
+}

@@ -1,1 +1,157 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The #Metoo movement</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#Twitter">Twitter</a></li>
+    <li><a data-toggle="tab" href="#Background">Background</a></li>
+    <li><a data-toggle="tab" href="#News">News</a></li>
+    <li><a data-toggle="tab" href="#Methods">Methods</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="Twitter" class="tab-pane fade in active">
+      <h3 id="head"><img src="Twitter.png" alt="" width="300" height="150" align="top"> #Metoo quickly became a worldwide movement</h3>
+
+      <p>More than 700,000 original tweets with #metoo were scraped from Twitter from October 15 to November 9, 2017 using twitterscraper.
+        Usernames information  extracted from tweets were used to scrape user location, using requests and BeautifulSoup packages in python.
+        Extracted locations were then processed by geocoder in geopy package to latitude and longitude coordinates, to map user location in the map below:
+      </p>
+      <img id="count" src="Total_count.png" alt="not working">
+      <a href="C:\Users\Uyen Nguyen\TDI_capstone\Twitter_Metoo\utn100.github.io\map.html"><img src="map2.png" alt="not working"> </a>
+
+      <h3 class="head">High frequency words, hashtag, reffered IDs, and bigrams</h3>
+      <h4>Word clouds </h4>
+      <img id="cloud" src="cloud.png" alt="">
+      <p></p>
+      <h4>Highly frequent Bigrams </h4>
+      <div>
+
+        <ul id="bigramlist">
+          <li>sexual, harassment: 10449</li>
+          <li>sexual, assault: 9162</li>
+          <li>sexually, harassed: 6462</li>
+          <li>social, media: 4538</li>
+          <li>sexually, assaulted: 3487</li>
+          <li>harassed, assaulted: 3196</li>
+          <li>sexual, abuse:	2772 </li>
+          <li>women, sexually:	2661</li>
+          <li>every, woman: 2369</li>
+          <li>harvey, weinstein: 1990</li>
+          <li>many, times: 1931</li>
+          <li>many, women:	1894</li>
+          <li>sense, magnitude:	1781</li>
+          <li>first, time:	1745</li>
+          <li>stories, sexual:	1738</li>
+          <li>share, stories: 1589</li>
+          <li>believe, you: 1380 </li>
+          <li>years, ago: 1305</li>
+        </ul>
+      </div>
+      <p></p>
+      <h4>Most referred ID</h4>
+      <ul>
+        <li>He deserves this everywhere he goes. Also @SenateMajLdr  and @realDonaldTrump #MeToo</li>
+        <li>Reminder that @realDonaldTrump and @IvankaTrump believe women harassed at work can just get a new job #MeToo #WomenWhoRoar</li>
+        <li>Hey Trump @POTUS @realDonaldTrump ME TOO. Every woman who has been sexually harassed, assaulted, violated, raped is posting "ME TOO" #MeToo</li>
+        <li>Men like HW, @realDonaldTrump think women exist for their use and abuse. Well, they can fuck right off. ENOUGH. #MeToo #WomenWhoRoar</li>
+        <li>@realDonaldTrump If all the women who have been sexually harassed or assaulted tweetTrump #Metoo we can show the magnitude of this issue!</li>
+      </ul>
+      <ul>
+        <li>@Amy_Siskind @Alyssa_Milano @chelseahandler @AshleyJudd #MeToo. But, united, women: we can be a force for #change. #groupHug</li>
+        <li>@Alyssa_Milano I'm not a woman, however, Me Too.  #MeToo</li>
+        <li>A heartbreaking #MeToo thread.  Thank you, @Alyssa_Milano</li>
+        <li>thank you, @Alyssa_Milano for alerting me to this. Sadly, #MeToo</li>
+        <li>@Alyssa_Milano you have known about Corey Haim for years but decided to keep quiet. Don't play the hero, it's too late. #MeToo</li>
+      </ul>
+      <ul>
+        <li>Shout out to my girl @taranaburke who has been advocating for assault victims & saying #MeToo for years.</li>
+        <li>For all the WOC catching understandable feelings of intersectional betrayal: #MeToo was created by a WOC, @TaranaBurke. #itsyours</li>
+        <li>Did y'all know that @TaranaBurke has been doing the work of #MeToo for a minute? I'm so grateful for this sister. </li>
+        <li>Thank you @TaranaBurke for your vision! You have given us language & a way forward.</li>
+        <li>#MeToo. Thank you @TaranaBurke for bringing us this gift of #MeToo almost 10 years ago. Still powerful today.</li>
+      </ul>
+
+      <h4>Change of hashtags through time</h4>
+      <iframe src="https://plot.ly/~unguyen/11.embed"
+          height="600" width="100%"
+          scrolling="no" seamless="seamless"
+          frameBorder="0">
+      </iframe>
+
+
+    </div>
+
+
+    <div id="Background" class="tab-pane fade">
+      <h2 id="title">An anlysis on the #metoo movement and social perception on sexual harassment</h2>
+      <h3>Introduction</h3>
+        <p>On October 15, actress Alyssa Milano posted a tweet with hashtag Me too, following the accusation of Harvey Weinstein on multiple sexual assault accounts by Hollywood actresses.
+        Following that, the social media has been flooded with millions of #Metoo and stories by victims of sexual abuse all over the world <a href="https://www.washingtonpost.com/news/morning-mix/wp/2017/10/16/me-too-alyssa-milano-urged-assault-victims-to-tweet-in-solidarity-the-response-was-massive/?utm_term=.5b42504801d">(washingtonpost)</a>.
+        The Harvey Weinstein incident also raised questions on why his victims did not report him any time sooner, even when they already gained career success.
+        Does social perception on sexual assault changes through time and does it influence how victims respond when things happen to them? Does technology play
+        a role in raising awareness of this pressing issue?
+        </p>
+        <p>To answer these questions, I propose to use text analytic tools to explore the topics on how social perception on sexual harassment evolved through time using social media data
+        including Twitter, Facebook, and news articles.</p>
+      <h3>Broader Significances</h3>
+        <p>Sexual assault is a serious issue that has been existing in all societies for a long time. In the US alone, every 1 in 6 women and every 1 in 33 men experienced attempted or
+        completed rape in their lifetime <a href="https://www.rainn.org/statistics/victims-sexual-violence">(rainn.org)</a>. Insights gained from this project can be applied to raise social
+         awareness and help build educational models and effective preventive tools.</p>
+    </div>
+
+    <div id="News" class="tab-pane fade">
+      <h3>Coverage of news related to sexual harassment since 1990</h3>
+      <p>By scraping more than 1000 new articles using the New York Times API</p>
+      <iframe src="https://plot.ly/~unguyen/5.embed"
+          height="600" width="100%"
+          scrolling="no" seamless="seamless"
+          frameBorder="0">
+      </iframe>
+
+    </div>
+    <div id="Methods" class="tab-pane fade">
+      <h4>Scrape twitter</h4>
+      <p>Tweet scraping using <a href="https://github.com/taspinar/twitterscraper">twitterscraper</a>, advantages of this over using twitter API
+      is that it allows to go back pass 7 days. However this method does not provide detailed information of user such as user location like the API method.
+      <pre>
+        <code>
+          #Run in command line in batches and combine files afterwards
+          twitterscraper %23metoo%20since%3A2017-10-15%20until%3A2017-11-9 -o "metoo_tweets.json"
+        </code>
+      </pre>
+      </p>
+      <h4>Extract and plot geolocation</h4>
+      <pre>
+        <code>
+          <p class="comment"> Scrape user location using BeautifulSoup and Requests </p>
+          <a class="link" href="location.py">location.py</a>
+          <p class="comment"> Convert location to latitude and longitude using geopy package </p>
+          <a class="link" href="geocode.py">geocode.py</a>
+          <p class="comment"> Plot scatter points on map using folium package  </p>
+          <a class="link" href="mapfolium.py">mapfolium.py</a>
+        </code>
+      </pre>
+      <h4>Frequency analyses of words, hashtag, referred ID, and term cooccurence</h4>
+      <pre>
+        <code>
+          <a class="link" href="word_frequency.py">word_frequency.py</a>
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

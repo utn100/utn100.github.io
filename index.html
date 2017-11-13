@@ -12,7 +12,8 @@
 
 </head>
 <body>
-<div class="container">
+<div class="content">
+  <div class="container">
     <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#Twitter">Twitter</a></li>
     <li><a data-toggle="tab" href="#Background">Background</a></li>
@@ -25,16 +26,18 @@
       <h3 id="head"><img src="Twitter.png" alt="" width="300" height="150" align="top"> #Metoo quickly became a worldwide movement</h3>
 
       <p>More than 700,000 original tweets with #metoo were scraped from Twitter from October 15 to November 9, 2017 using twitterscraper.
+        Associated with this, ~1.6 million of retweets and >300,000 replies were counted during this time period.
         Usernames information  extracted from tweets were used to scrape user location, using requests and BeautifulSoup packages in python.
         Extracted locations were then processed by geocoder in geopy package to latitude and longitude coordinates, to map user location in the map below:
       </p>
       <img id="count" src="Total_count.png" alt="not working">
-      <a href="C:\Users\Uyen Nguyen\TDI_capstone\Twitter_Metoo\utn100.github.io\map.html"><img src="map2.png" alt="not working"> </a>
+      <a href="C:\Users\Uyen Nguyen\TDI_capstone\Twitter_Metoo\utn100.github.io\map.html"><img id="map" src="map2.png" alt="not working"> </a>
 
       <h3 class="head">High frequency words, hashtag, reffered IDs, and bigrams</h3>
       <h4>Word clouds </h4>
       <img id="cloud" src="cloud.png" alt="">
       <p></p>
+
       <h4>Highly frequent Bigrams </h4>
       <div>
 
@@ -60,35 +63,66 @@
         </ul>
       </div>
       <p></p>
-      <h4>Most referred ID</h4>
-      <ul>
-        <li>He deserves this everywhere he goes. Also @SenateMajLdr  and @realDonaldTrump #MeToo</li>
-        <li>Reminder that @realDonaldTrump and @IvankaTrump believe women harassed at work can just get a new job #MeToo #WomenWhoRoar</li>
-        <li>Hey Trump @POTUS @realDonaldTrump ME TOO. Every woman who has been sexually harassed, assaulted, violated, raped is posting "ME TOO" #MeToo</li>
-        <li>Men like HW, @realDonaldTrump think women exist for their use and abuse. Well, they can fuck right off. ENOUGH. #MeToo #WomenWhoRoar</li>
-        <li>@realDonaldTrump If all the women who have been sexually harassed or assaulted tweetTrump #Metoo we can show the magnitude of this issue!</li>
-      </ul>
-      <ul>
-        <li>@Amy_Siskind @Alyssa_Milano @chelseahandler @AshleyJudd #MeToo. But, united, women: we can be a force for #change. #groupHug</li>
-        <li>@Alyssa_Milano I'm not a woman, however, Me Too.  #MeToo</li>
-        <li>A heartbreaking #MeToo thread.  Thank you, @Alyssa_Milano</li>
-        <li>thank you, @Alyssa_Milano for alerting me to this. Sadly, #MeToo</li>
-        <li>@Alyssa_Milano you have known about Corey Haim for years but decided to keep quiet. Don't play the hero, it's too late. #MeToo</li>
-      </ul>
-      <ul>
-        <li>Shout out to my girl @taranaburke who has been advocating for assault victims & saying #MeToo for years.</li>
-        <li>For all the WOC catching understandable feelings of intersectional betrayal: #MeToo was created by a WOC, @TaranaBurke. #itsyours</li>
-        <li>Did y'all know that @TaranaBurke has been doing the work of #MeToo for a minute? I'm so grateful for this sister. </li>
-        <li>Thank you @TaranaBurke for your vision! You have given us language & a way forward.</li>
-        <li>#MeToo. Thank you @TaranaBurke for bringing us this gift of #MeToo almost 10 years ago. Still powerful today.</li>
-      </ul>
-
       <h4>Change of hashtags through time</h4>
-      <iframe src="https://plot.ly/~unguyen/11.embed"
+      <iframe id="hashtag" src="https://plot.ly/~unguyen/11.embed"
           height="600" width="100%"
           scrolling="no" seamless="seamless"
           frameBorder="0">
       </iframe>
+      <p></p>
+      <h4>Most referred ID</h4>
+      <div class="box">
+
+      <div class="table">
+        <p>Alyssa Milano: Hollywood actress who started #metoo movement on Twitter in 2017</p>
+        <p>#tweets: 3582 - #retweets: 9011</p>
+        <ul class="list">
+          <li>Last week @Alyssa_Milano's #MeToo hashtag went viral. We all need to remember that a self admitted sexual predator is in the White House! pic.twitter.com/bfXltQkjTB - Oct 22</li>
+          <li>If you think twitter activism doesn't work, you are sadly mistaken. Thank you @Alyssa_Milano for starting such a powerful movement. #MeToo https://twitter.com/Alyssa_Milano/status/926554563653517313\xa0\u2026 - Nov 3</li>
+          <li>Who's the Boss' now?  @Alyssa_Milano that's who.  Thank you for standing against violence, #AlyssaMilano. #MeToo #WhosTheBoss #RapeSurvivor - Oct 19</li>
+          <li>I'm very sure @Alyssa_Milano didn't know #MeToo was started by a black woman. Because the Black woman got no shine. *That's* the issue. - Oct 17</li>
+          <li>When @RobinRoberts says It's a privilege to be a messenger, Isn't it? You look about to tear up.. #MeToo. Proud of you. @Alyssa_Milano. https://twitter.com/alyssa_milano/status/921386028534972421\xa0\u2026 - Oct 21</li>
+        </ul>
+      </div>
+
+      <div class="table">
+        <p>Tarana Burke: The woman who started the Metoo campaign in 2007</p>
+        <p>#tweets: 1308 - #retweets: 12752</p>
+          <ul class="list">
+            <li>Shout out to my girl @taranaburke who has been advocating for assault victims & saying #MeToo for years. - Oct 16</li>
+            <li>Calling all #Survivors & #Allies!#MeTooSurvivorsMarch 11/12 #Hollywood & Highland In alliance w #TakeBackTheWorkplace 10am-3pm Speakers from ALL areas of #SexualAssault See us on Facebook. Founder of #MeToo @TaranaBurke w #JaydaRasberry #AleeshaBarlow @AF3IRM @iv3s  Moi & morepic.twitter.com/v0B594fFcl - Nov 8</li>
+            <li>#MeToo has garnered over 800k tweets but mainstream press neglects to mention @TaranaBurke & I also shout out @ReignOfApril #NotOnMyWatch - Oct 17</li>
+            <li>xchange & empathy with other survivors': @TaranaBurke, creator of #MeToo, joins @DavidShuster to discuss the hashtag's impactpic.twitter.com/v2THFBwrbv - Oct 20</li>
+            <li>After major headlines surrounding sexual harassment allegations, #MeToo movement founder @TaranaBurke and @RepLawrence join @ThisWeekABC.pic.twitter.com/3eOTnANgnD - Oct 28</li>
+          </ul>
+      </div>
+
+      <div class="table">
+        <p>Donald Trump: US president</p>
+        <p></p>
+        <p>#tweets: 1525 - #retweets: 15710</p>
+          <ul class="list">
+            <li>Poll. When thinking about Donald Trump what gives you the worst nightmares? #metoo #BREAKING #ImpeachTrump #NotMyPresident @realDonaldTrump - Nov 2</li>
+            <li>Leaving @realDonaldTrump in office normalizes toxic masculinity, rape culture, and the oppression of women. This nonsense must end.\n\nhttp://www.cnn.com/2017/01/17/politics/betsy-devos-donald-trump-sexual-assault/index.html\xa0\u2026\n#MeToo #resist #weinstein #25thAmendment - Oct 16</li>
+            <li>Dangerous, unfit, fraud, phony, sexual assaulter, incited violence, dangerous mental illness, same message as David Duke...\n\nThese are words used to describe @realDonaldTrump . \n\n#resist #ThursdayThoughts #MeToo\n#TrumpRussia #trump #magapic.twitter.com/0cZh5lnyjE - Oct 19</li>
+            <li>Summer Zervos was paid $500,000 by filthy Democrats to fabricate her sexual harassment claim against @realDonaldTrump\n#MeToo #MAGA #TCOT #USpic.twitter.com/OeuFXmdgks - Oct 16</li>
+            <li>Now is the time for all women abused or harassed by the  SexualPredator-in-chief @realDonaldTrump to COME OUT and SPEAK UP. #MeToo PLEASE RT - Oct 26</li>
+          </ul>
+      </div>
+    </div>
+
+      <h4>Most retweeted tweets</h4>
+      <ul>
+        <li>995 times: I'm proud of women for sharing their stories on #MeToo but we need a shift about how we talk about sexual assault so i'm starting #HimThough - Oct 17</li>
+        <li>995 times: Since #Liberals love erasing symbols of "injustice" when are they going after the Hollywood sign? #HarveyWeinstein\#MeToo\#meToomen pic.twitter.com/BWxmpNhGkD - Oct 19</li>
+        <li>993 times: I'm grateful that my kids in school worked with law enforcement and private security to ensure campus safety, and work with me. #MeToo - Oct 16</li>
+        <li>992 times: Imagine if instead of #MeToo , abusers, finally too overwhelmed by their guilt & shame, came forward to say #ItWasMe & turned themselves in. - Oct 16</li>
+        <li>99 times: To all the women who are feeling a rush of nausea as another news cycle brings up traumas in your past: I'm with you & I support you & I love you #MeToo - Nov 9</li>
+        <li>99 times: A British politician admits he made his secretary buy sex toys as #MeToo hits Parliament http://wapo.st/2zPYzuo\xa0' - Oct 29</li>
+        <li>99 times: #MeToo End the Statutory limits for #SexualHarassment Assault and Rape! You'll see how massive this issue is! #CA - NO LIMITS IN 2018pic.twitter.com/eadTJfS3Lk - Oct 26</li>
+        <li>99 times: Audre Lorde To all the brave women speaking out this week: thank you for sharing your stories #MeToo pic.twitter.com/QRay6fqzeW - Oct 20</li>
+        <li>99 times: Riddle me this,if men are SO unaware of sexual harassment and assault,why are they SO fired up about their daughters not dating?? #MeToo - Oct 19 </li>
+      </ul>
 
 
     </div>
@@ -152,6 +186,6 @@
     </div>
   </div>
 </div>
-
+</div>
 </body>
 </html>

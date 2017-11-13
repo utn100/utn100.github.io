@@ -26,10 +26,9 @@
       <h3 id="head"><img src="Twitter.png" alt="" width="300" height="150" align="top"> #Metoo quickly became a worldwide movement</h3>
 
       <p>More than 700,000 original tweets with #metoo were scraped from Twitter from October 15 to November 9, 2017 using twitterscraper.
-        Associated with this, ~1.6 million of retweets and >300,000 replies were counted during this time period.
-        Usernames information  extracted from tweets were used to scrape user location, using requests and BeautifulSoup packages in python.
-        Extracted locations were then processed by geocoder in geopy package to latitude and longitude coordinates, to map user location in the map below:
-      </p>
+      Associated with this, ~1.6 million of retweets and >300,000 replies were counted during this time period.</p>
+      <p>Usernames information  extracted from tweets were used to scrape user location, using requests and BeautifulSoup packages in python.
+      Extracted locations were then processed by geocoder in geopy package to latitude and longitude coordinates, to map user location in the map below:</p>
       <img id="count" src="Total_count.png" alt="not working">
       <a href="C:\Users\Uyen Nguyen\TDI_capstone\Twitter_Metoo\utn100.github.io\map.html"><img id="map" src="map2.png" alt="not working"> </a>
 
@@ -64,7 +63,7 @@
       </div>
       <p></p>
       <h4>Change of hashtags through time</h4>
-      <iframe id="hashtag" src="https://plot.ly/~unguyen/11.embed"
+      <iframe id="hashtag" src="https://plot.ly/~unguyen/13.embed"
           height="600" width="100%"
           scrolling="no" seamless="seamless"
           frameBorder="0">
@@ -147,12 +146,21 @@
 
     <div id="News" class="tab-pane fade">
       <h3>Coverage of news related to sexual harassment since 1990</h3>
-      <p>By scraping more than 1000 new articles using the New York Times API</p>
+      <p>About 1400 articles were scraped using the New York Times API key with ‘sexual’ as search query.</p>
+      <p> Those articles were then parsed, extracted for specific information. These articles were grouped by year
+        and normalized to total number of articles per year.</p>
+      <p> Assuming a linear rate of increase in published articles per day and 35% increase between 2010 and 2016,
+        knowing the NYT publishes on average 170 articles per day in 2010 <a href=" https://www.theatlantic.com/technology/archive/2016/05/how-many-stories-do-newspapers-publish-per-day/483845/">(theatlantic)</a>, rough total number of articles
+        published by NYT per year was calculated for 1999-2017. </p>
+      <p> This plot shows sudden increase in news coverage
+        on this topics from 2013-present. Within 2017, this October only has the most number of articles in the history.</p>
       <iframe src="https://plot.ly/~unguyen/5.embed"
           height="600" width="100%"
           scrolling="no" seamless="seamless"
           frameBorder="0">
       </iframe>
+      <h3>Next step: To use topic modeling to examine changes in topics covered in news</h3>
+
 
     </div>
     <div id="Methods" class="tab-pane fade">

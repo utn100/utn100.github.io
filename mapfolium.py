@@ -4,7 +4,7 @@ with open('geocode_combined.csv','r') as f:
 	code = [line.rstrip() for line in f]
     code =[item for item in code if item != ""]
 
-#Convert each location point to be tuple
+#Convert each location point to tuple
 code_tuple = []
 for item in code:
 	code_tuple.append(make_tuple(item[1:(len(item)-1)]))

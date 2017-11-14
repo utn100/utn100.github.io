@@ -23,13 +23,13 @@
 
   <div class="tab-content">
     <div id="Twitter" class="tab-pane fade in active">
+      <div class="webwidth">
       <h3 id="head"><img src="Twitter.png" alt="" width="300" height="150" align="top"> #Metoo quickly became a worldwide movement</h3>
 
-      <p>More than 700,000 original tweets with #metoo were scraped from Twitter from October 15 to November 9, 2017 using twitterscraper.
+      <p> >700,000 original tweets with #metoo were scraped from Twitter from October 15 to November 9, 2017 using twitterscraper.
       Associated with this, ~1.6 million of retweets and >300,000 replies were counted during this time period.</p>
-      <p>Usernames information  extracted from tweets were used to scrape user location, using requests and BeautifulSoup packages in python.
-      Extracted locations were then processed by geocoder in geopy package to latitude and longitude coordinates, to map user location in the map below:</p>
       <img id="count" src="Total_count.png" alt="not working">
+      <p></p>
       <a href="C:\Users\Uyen Nguyen\TDI_capstone\Twitter_Metoo\utn100.github.io\map.html"><img id="map" src="map2.png" alt="not working"> </a>
 
       <h3 class="head">High frequency words, hashtag, reffered IDs, and bigrams</h3>
@@ -62,13 +62,56 @@
         </ul>
       </div>
       <p></p>
-      <h4>Change of hashtags through time</h4>
+      <h4>Change of hashtags through time - Equivalence of #metoo in different languages</h4>
       <iframe id="hashtag" src="https://plot.ly/~unguyen/13.embed"
           height="600" width="100%"
           scrolling="no" seamless="seamless"
           frameBorder="0">
       </iframe>
       <p></p>
+      <h4>Topic modeling using  Non Negative Matrix Factorization (NMF)</h4>
+      <ul>
+        <li class="topic">Topic 0 - Twitter image: twitter com pic pm dhanteras tv la status campaign en</li>
+        <ol>
+          <li>#MeToo pic.twitter.com/XHbw7FUiQo</li>
+          <li>#MeToo pic.twitter.com/4fOKO6LAGX</li>
+          <li>#MeToo pic.twitter.com/uvBd0pyq4U</li>
+          <li>#metoo pic.twitter.com/8dMiEwJFeo</li>
+          <li>#MeToo pic.twitter.com/o08EEgNwzt</li>
+        </ol>
+        <li class="topic">Topic 1 - The definition: sexual harassment assault stories abuse social media share victims campaign</li>
+        <ol>
+          <li>Sexual Assault and Sexual Harassment . #MeToo</li>
+          <li>You can survive a sexual assault/harassment and STILL be a sexual being. #MeToo https://twitter.com/DeonBanks__/status/919973844407943168 …</li>
+          <li>#metoo Becaue Sexual Assault or Sexual Harassment are NOT acceptable… https://www.instagram.com/p/BaZ8L_nnuB_-NFeNs1i9jadUbXKazhefnluQ6I0/ …</li>
+          <li>""" RT UltraViolet: Sexual harassment is an epidemic. Sexual assault is an epidemic. #BelieveSurvivors #MeToo … https://twitter.com/womensmarch/status/921100113958920192 …"</li>
+          <li>"And for anyone confused, #metoo isn't just about sexual assault, it includes sexual harassment as well."</li>
+        </ol>
+        <li class="topic">Topic 2 - The men perspective: women men need speak stories stand saying world abuse response</li>
+        <ol>
+          <li>#MeToo not only men objectify women and not only women get objectified</li>
+          <li>"Women: #Metoo Men: #IHearYou Women: #IWasntDoneTalkingYet"</li>
+          <li>"Unapologetically expressed the plight of women! Kudos to men for women. From him for her! @RaoulKerr @amani_kerr #MeToo #musichttps://twitter.com/RaoulKerr/status/920292897127149568 …"</li>
+          <li>"Men,Please realise that Women are humans too. Signed, All Women. #100Women #MeToo"</li>
+          <li>"Men: This is a witchhunt! Women: Isn't that when you pretended women were magical so you could burn us to death for being clever? #metoo"</li>
+        </ol>
+        <li class="topic">Topic 3 - The scope: sexually harassed assaulted wrote people problem magnitude status sense women</li>
+        <ol>
+          <li>"Me too. To everyone who's been sexually harassed or assaulted. #MeToo"</li>
+          <li>1980 Grant Settlemeier (Settlemeyer)  sexually harassed and assaulted me! #MeToo</li>
+          <li>sexually harassed or assaulted? #MeToo</li>
+          <li>No one ever deserves to be sexually harassed or assaulted. #MeToo</li>
+          <li>"BECAUSE every 98 seconds someone is sexually assaulted and/or harassed.#metoo"</li>
+        </ol>
+        <li class="topic">Topic 4 - How commonly it happens to women: know say woman story time like years people want feel</li>
+        <ol>
+          <li>"Is there any woman who can't say #MeToo? We don't know one. This story by @LaurEggertCrowe is hers & universal, too.http://aflwmag.com/2016/12/15/wall-of-resistance-walking-lauren-eggert-crowe …"</li>
+          <li>"RT voxdotcom ""“I don’t know a woman who can’t say #MeToo.” http://bit.ly/2zNb6iP """"#metoo </li>
+          <li>I don’t know of any woman who can’t say “me, too.”"</li>
+          <li>If there is a woman I know who couldn't say #MeToo (regardless of whether or not she chooses to) that frankly would be the surprising part.</li>
+          <li>“I don’t know a woman who can’t say #MeToo.” http://bit.ly/2zNb6iP </li>
+        </ol>
+      </ul>
       <h4>Most referred ID</h4>
       <div class="box">
 
@@ -125,7 +168,7 @@
 
 
     </div>
-
+  </div>
 
     <div id="Background" class="tab-pane fade">
       <h2 id="title">An anlysis on the #metoo movement and social perception on sexual harassment</h2>
@@ -166,7 +209,7 @@
     <div id="Methods" class="tab-pane fade">
       <h4>Scrape twitter</h4>
       <p>Tweet scraping using <a href="https://github.com/taspinar/twitterscraper">twitterscraper</a>, advantages of this over using twitter API
-      is that it allows to go back pass 7 days. However this method does not provide detailed information of user such as user location like the API method.
+      is that it allows to go back pass 7 days. However this method does not provide "undersurface" information of user such as user location or followers like the API method.
       <pre>
         <code>
           #Run in command line in batches and combine files afterwards
@@ -188,7 +231,14 @@
       <h4>Frequency analyses of words, hashtag, referred ID, and term cooccurence</h4>
       <pre>
         <code>
+          <p class="comment">Tweet texts were cleaned up and processed using functions in NLTK package. Word clouds were created by converted most frequent words and their frequency to dictionary as input to wordcloud package </p>
           <a class="link" href="word_frequency.py">word_frequency.py</a>
+        </code>
+      </pre>
+      <h4>A simple Non Negative Matrix Factorization (NMF) model </h4>
+      <pre>
+        <code>
+          <a class="link" href="NMF_topic.py">NMF_topic.py</a>
         </code>
       </pre>
     </div>

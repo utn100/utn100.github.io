@@ -53,7 +53,7 @@ h4{
 
 .comment{
   color: green;
-  font-size: 18px;
+  font-size: 16px;
 }
 .link{
   font-size: 15px;
@@ -78,4 +78,13 @@ div.table{
 .box{
   display: flex;
   flex: 10
+}
+#NMF{
+  width: 10px;
+  height:10px;
+}
+.topic{
+  font-size: 22;
+  color: red;
+  font-weight: bold;
 }
